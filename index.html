@@ -147,7 +147,6 @@
 
     .nav-right { display: flex; align-items: center; gap: 0.9rem; }
 
-    /* Theme button */
     .theme-btn {
       display: flex; align-items: center; gap: 0.5rem;
       padding: 0.4rem 0.95rem;
@@ -164,7 +163,6 @@
       color: var(--accent); transition: color 0.3s;
     }
 
-    /* Hamburger */
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--txt); border-radius: 2px; transition: all 0.3s; }
     .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -186,9 +184,6 @@
       border-bottom: 1px solid var(--border-soft);
     }
 
-    /* ════════════════════════════════════════════
-       SECTION BASE
-    ════════════════════════════════════════════ */
     .section-wrap { max-width: 1180px; margin: 0 auto; padding: 110px 6% 80px; }
 
     .section-label {
@@ -208,9 +203,6 @@
       box-shadow: 0 0 10px var(--accent-glow);
     }
 
-    /* ════════════════════════════════════════════
-       HERO
-    ════════════════════════════════════════════ */
     #hero {
       min-height: 100vh; display: grid;
       grid-template-columns: 1fr 1fr;
@@ -284,7 +276,6 @@
     }
     .btn-outline:hover { border-color: var(--accent); background: var(--accent-soft); transform: translateY(-3px); }
 
-    /* Hero image */
     .hero-image-wrap {
       display: flex; justify-content: center; align-items: center;
       animation: heroImgIn 1.2s 0.4s cubic-bezier(0.4,0,0.2,1) both;
@@ -356,9 +347,6 @@
       50%     { transform:translateY(-8px) rotate(2deg); }
     }
 
-    /* ════════════════════════════════════════════
-       ABOUT
-    ════════════════════════════════════════════ */
     #about { background: var(--bg-2); transition: background var(--transition); }
 
     .about-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:5rem; align-items:center; }
@@ -404,9 +392,6 @@
     .timeline-school { font-family:'Playfair Display',serif; font-size:1.55rem; font-weight:700; color:var(--txt); margin-bottom:0.2rem; transition:color var(--transition); }
     .timeline-degree { font-size:0.92rem; color:var(--txt-muted); }
 
-    /* ════════════════════════════════════════════
-       SKILLS
-    ════════════════════════════════════════════ */
     #skills { background: var(--bg-2); transition: background var(--transition); }
 
     .skills-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 3.5rem; }
@@ -428,9 +413,6 @@
     }
     @keyframes barShimmer { 0%,100%{opacity:0;} 50%{opacity:1;} }
 
-    /* ════════════════════════════════════════════
-       PROJECTS
-    ════════════════════════════════════════════ */
     .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.6rem; }
     .project-card {
       background: var(--bg-card); border: 1.5px solid var(--border-soft);
@@ -466,9 +448,6 @@
     }
     .tag:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
 
-    /* ════════════════════════════════════════════
-       CONTACT
-    ════════════════════════════════════════════ */
     #contact { background: var(--bg-2); transition: background var(--transition); }
 
     .contact-grid { display:grid; grid-template-columns:1fr 1.5fr; gap:5rem; align-items:start; }
@@ -492,7 +471,6 @@
     }
     .social-link:hover .social-icon { background:var(--accent); color:#fff; }
 
-    /* Form */
     .contact-form-wrap { display:flex; flex-direction:column; gap:1.2rem; }
     .form-group { display:flex; flex-direction:column; gap:0.45rem; }
     .form-group label { font-family:'Outfit',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--txt-muted); }
@@ -527,9 +505,6 @@
     .form-success.show { display:block; animation:popIn 0.5s ease both; }
     @keyframes popIn { from{opacity:0;transform:scale(0.95);} to{opacity:1;transform:scale(1);} }
 
-    /* ════════════════════════════════════════════
-       FOOTER
-    ════════════════════════════════════════════ */
     footer {
       border-top: 1px solid var(--border-soft);
       padding: 2.5rem 6%;
@@ -540,9 +515,6 @@
     .footer-left span { color:var(--accent); }
     .footer-right { font-family:'DM Sans',sans-serif; font-size:0.78rem; color:var(--txt-muted); }
 
-    /* ════════════════════════════════════════════
-       REVEAL ANIMATIONS
-    ════════════════════════════════════════════ */
     .reveal {
       opacity:0; transform:translateY(28px);
       transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
@@ -561,9 +533,6 @@
     }
     .reveal-right.visible { opacity:1; transform:translateX(0); }
 
-    /* ════════════════════════════════════════════
-       RESPONSIVE
-    ════════════════════════════════════════════ */
     @media (max-width:900px) {
       #hero { grid-template-columns:1fr; text-align:center; padding-top:110px; }
       .hero-image-wrap { order:-1; }
@@ -589,7 +558,6 @@
 </head>
 <body>
 
-<!-- Background -->
 <div class="bg-grid"></div>
 <div class="blob blob-1"></div>
 <div class="blob blob-2"></div>
@@ -597,7 +565,6 @@
 <div class="cursor-glow" id="cursorGlow"></div>
 <div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- ═══ NAV ═══ -->
 <nav>
   <div class="nav-logo">S<span>.</span>Rodrigo</div>
   <ul class="nav-links">
@@ -628,7 +595,6 @@
   <a href="#contact"   onclick="closeMobile()">Contact</a>
 </div>
 
-<!-- ═══ HERO ═══ -->
 <section id="hero">
   <div class="hero-text">
     <p class="hero-greeting">👋 Hello, I'm</p>
@@ -664,7 +630,6 @@
   </div>
 </section>
 
-<!-- ═══ ABOUT ═══ -->
 <div id="about">
   <div class="section-wrap">
     <p class="section-label reveal">Who I am</p>
