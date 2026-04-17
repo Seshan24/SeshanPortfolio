@@ -368,9 +368,6 @@
     .stat-num { font-family:'Outfit',sans-serif; font-size:2.6rem; font-weight:800; color:var(--accent); line-height:1; }
     .stat-label { font-family:'Outfit',sans-serif; font-size:0.65rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--txt-muted); margin-top:0.4rem; }
 
-    /* ════════════════════════════════════════════
-       EDUCATION
-    ════════════════════════════════════════════ */
     .timeline { position:relative; padding-left:2rem; }
     .timeline::before {
       content:''; position:absolute; left:0; top:0; bottom:0; width:2px;
@@ -649,8 +646,6 @@
     </div>
   </div>
 </div>
-
-<!-- ═══ EDUCATION ═══ -->
 <div id="education">
   <div class="section-wrap">
     <p class="section-label reveal">Academic Background</p>
@@ -690,8 +685,6 @@
     </div>
   </div>
 </div>
-
-<!-- ═══ SKILLS ═══ -->
 <div id="skills">
   <div class="section-wrap">
     <p class="section-label reveal">What I know</p>
@@ -713,8 +706,6 @@
     </div>
   </div>
 </div>
-
-<!-- ═══ PROJECTS ═══ -->
 <div id="projects">
   <div class="section-wrap">
     <p class="section-label reveal">What I've Built</p>
@@ -742,8 +733,6 @@
     </div>
   </div>
 </div>
-
-<!-- ═══ CONTACT INFORMATION ═══ -->
 <div id="contact">
   <div class="section-wrap">
     <p class="section-label reveal">Let's Connect</p>
@@ -793,22 +782,17 @@
     </div>
   </div>
 </div>
-
-<!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="footer-left"><span>Seshan Rodrigo</span> | Portfolio</div>
   <div class="footer-right"> © 2026  Seshan Rodrigo. All rights reserved.</div>
 </footer>
 
 <script>
-/* ── Cursor glow ── */
 const cursorGlow = document.getElementById('cursorGlow');
 document.addEventListener('mousemove', e => {
   cursorGlow.style.left = e.clientX + 'px';
   cursorGlow.style.top  = e.clientY + 'px';
 });
-
-/* ── Theme Toggle ── */
 const root  = document.documentElement;
 const tBtn  = document.getElementById('themeBtn');
 const tIcon = document.getElementById('tIcon');
@@ -832,22 +816,16 @@ tBtn.addEventListener('click', () => {
     photo.style.transform = 'scale(1)';
   }, 320);
 });
-
-/* ── Scroll progress ── */
 const bar = document.getElementById('scrollProgress');
 window.addEventListener('scroll', () => {
   const pct = (document.documentElement.scrollTop /
     (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
   bar.style.width = pct + '%';
 }, { passive: true });
-
-/* ── Hamburger ── */
 const ham = document.getElementById('hamburger');
 const mob = document.getElementById('mobileNav');
 ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
 function closeMobile() { ham.classList.remove('open'); mob.classList.remove('open'); }
-
-/* ── Active nav ── */
 const secs = document.querySelectorAll('section[id], div[id]');
 const navA = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
@@ -855,8 +833,6 @@ window.addEventListener('scroll', () => {
   secs.forEach(s => { if (window.scrollY >= s.offsetTop - 130) cur = s.id; });
   navA.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
 }, { passive: true });
-
-/* ── Typed role ── */
 const roles = ['Aspiring AI Engineer','Business Solutions Developer','AI Enthusiast','Solopreneur','Software Developer'];
 let ri = 0, ci = 0, del = false;
 const roleEl = document.getElementById('typedRole');
@@ -874,8 +850,6 @@ function type() {
   setTimeout(type, del ? 42 : 78);
 }
 setTimeout(type, 1400);
-
-/* ── Intersection reveal ── */
 const revEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.skill-item,.project-card,.timeline-item,.stat-card');
 const obs = new IntersectionObserver((entries) => {
   entries.forEach((en) => {
@@ -890,8 +864,6 @@ const obs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.11 });
 revEls.forEach(el => obs.observe(el));
-
-/* ── Counter ── */
 document.querySelectorAll('.stat-num[data-count]').forEach(el => {
   const cObs = new IntersectionObserver((entries) => {
     if (!entries[0].isIntersecting) return;
@@ -906,8 +878,6 @@ document.querySelectorAll('.stat-num[data-count]').forEach(el => {
   }, { threshold: 0.5 });
   cObs.observe(el);
 });
-
-/* ── Form ── */
 function submitForm() {
   const name = document.getElementById('fname');
   const email = document.getElementById('femail');
