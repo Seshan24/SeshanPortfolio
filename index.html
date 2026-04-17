@@ -9,9 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
-    /* ═══════════════════════════════
-       VARIABLES — Light: white + blue
-    ══════════════════════════════════ */
+ 
     :root {
       --bg:           #ffffff;
       --bg-2:         #f0f5ff;
@@ -34,9 +32,6 @@
       --blob2:        rgba(99,155,255,0.04);
     }
 
-    /* ═══════════════════════════════
-       VARIABLES — Dark: black + blue
-    ══════════════════════════════════ */
     [data-theme="dark"] {
       --bg:           #050810;
       --bg-2:         #080d1a;
@@ -57,7 +52,6 @@
       --blob2:        rgba(59,130,246,0.08);
     }
 
-    /* ════════════  RESET ════════════  */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -73,9 +67,6 @@
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; }
 
-    /* ══════════════════════════
-       BACKGROUND — grid + blobs
-    ═════════════════════════════ */
     .bg-grid {
       position: fixed; inset: 0; z-index: -2; pointer-events: none;
       background-image:
@@ -101,20 +92,12 @@
       66%  { transform: translate(-25px,45px) scale(0.94); }
       100% { transform: translate(35px,25px) scale(1.09); }
     }
-
-    /* ════════════════
-       SCROLL PROGRESS
-    ═══════════════════ */
     .scroll-progress {
       position: fixed; top: 0; left: 0; height: 3px; z-index: 2000;
       background: linear-gradient(90deg, var(--accent), var(--accent-2));
       box-shadow: 0 0 12px var(--accent-glow);
       transition: width 0.08s linear;
     }
-
-    /* ════════════
-       CURSOR GLOW
-    ═══════════════ */
     .cursor-glow {
       position: fixed; pointer-events: none; z-index: 9999;
       width: 320px; height: 320px; border-radius: 50%;
@@ -122,10 +105,6 @@
       transform: translate(-50%,-50%);
       transition: left 0.06s linear, top 0.06s linear;
     }
-
-    /* ════════════
-       NAVIGATION
-    ═══════════════ */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
       display: flex; align-items: center; justify-content: space-between;
