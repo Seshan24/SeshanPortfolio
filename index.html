@@ -235,7 +235,6 @@
       margin-bottom: 1.8rem; animation: heroUp 0.9s 0.6s both;
     }
     .hero-age::before { content:''; width:28px; height:1.5px; background: var(--accent); border-radius:2px; }
-
     .hero-desc {
       font-size: 0.96rem; color: var(--txt-muted); line-height: 1.9;
       max-width: 470px; margin-bottom: 2.4rem;
@@ -324,12 +323,9 @@
       0%,100% { transform:translateY(0) rotate(-2deg); }
       50%     { transform:translateY(-8px) rotate(2deg); }
     }
-
     #about { background: var(--bg-2); transition: background var(--transition); }
-
     .about-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:5rem; align-items:center; }
     .about-text p { color:var(--txt-muted); font-size:1.01rem; line-height:1.9; margin-bottom:1.1rem; }
-
     .about-stats { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
     .stat-card {
       background: var(--bg-card); border: 1.5px solid var(--border);
@@ -366,9 +362,7 @@
     .timeline-period { font-family:'Outfit',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent); margin-bottom:0.25rem; }
     .timeline-school { font-family:'Playfair Display',serif; font-size:1.55rem; font-weight:700; color:var(--txt); margin-bottom:0.2rem; transition:color var(--transition); }
     .timeline-degree { font-size:0.92rem; color:var(--txt-muted); }
-
     #skills { background: var(--bg-2); transition: background var(--transition); }
-
     .skills-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 3.5rem; }
     .skill-item { margin-bottom:1.5rem; }
     .skill-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem; }
@@ -387,7 +381,6 @@
       animation: barShimmer 2.2s ease-in-out infinite;
     }
     @keyframes barShimmer { 0%,100%{opacity:0;} 50%{opacity:1;} }
-
     .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.6rem; }
     .project-card {
       background: var(--bg-card); border: 1.5px solid var(--border-soft);
@@ -409,7 +402,6 @@
     .project-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color:var(--border); }
     .project-card:hover::before { transform: scaleX(1); }
     .project-card:hover::after  { opacity:1; }
-
     .project-num { font-family:'Outfit',sans-serif; font-size:4rem; font-weight:800; line-height:1; color:var(--bar-bg); margin-bottom:0.4rem; transition:color var(--transition); }
     .project-title { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; color:var(--txt); margin-bottom:0.75rem; transition:color var(--transition); }
     .project-desc { font-size:0.9rem; color:var(--txt-muted); line-height:1.75; margin-bottom:1.2rem; }
@@ -422,13 +414,10 @@
       transition: background 0.25s, color 0.25s, border-color 0.25s;
     }
     .tag:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
-
     #contact { background: var(--bg-2); transition: background var(--transition); }
-
     .contact-grid { display:grid; grid-template-columns:1fr 1.5fr; gap:5rem; align-items:start; }
     .contact-info h3 { font-size:1.6rem; font-weight:700; color:var(--txt); margin-bottom:0.5rem; transition:color var(--transition); }
     .contact-info p { font-size:0.92rem; color:var(--txt-muted); line-height:1.85; margin-bottom:2rem; }
-
     .social-links { display:flex; flex-direction:column; gap:0.75rem; }
     .social-link {
       display:flex; align-items:center; gap:0.9rem;
@@ -445,7 +434,6 @@
       color:var(--accent); flex-shrink:0; transition:background 0.3s, color 0.3s;
     }
     .social-link:hover .social-icon { background:var(--accent); color:#fff; }
-
     .contact-form-wrap { display:flex; flex-direction:column; gap:1.2rem; }
     .form-group { display:flex; flex-direction:column; gap:0.45rem; }
     .form-group label { font-family:'Outfit',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--txt-muted); }
@@ -461,7 +449,6 @@
     .form-group input.error, .form-group textarea.error { border-color:#ef4444; }
     .error-msg { font-family:'Outfit',sans-serif; font-size:0.7rem; color:#ef4444; display:none; }
     .error-msg.show { display:block; }
-
     .form-submit {
       font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:700;
       letter-spacing:0.1em; text-transform:uppercase;
