@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
- 
     :root {
       --bg:           #ffffff;
       --bg-2:         #f0f5ff;
@@ -51,7 +50,6 @@
       --blob1:        rgba(37,99,235,0.14);
       --blob2:        rgba(59,130,246,0.08);
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -66,7 +64,6 @@
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; }
-
     .bg-grid {
       position: fixed; inset: 0; z-index: -2; pointer-events: none;
       background-image:
@@ -119,7 +116,6 @@
       from { transform: translateY(-100%); opacity: 0; }
       to   { transform: translateY(0);     opacity: 1; }
     }
-
     .nav-logo {
       font-family: 'Outfit', sans-serif;
       font-weight: 800; font-size: 1.15rem; color: var(--txt);
@@ -130,7 +126,6 @@
       0%,100% { text-shadow: none; }
       50%     { text-shadow: 0 0 14px var(--accent-glow); }
     }
-
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
       font-family: 'Outfit', sans-serif; font-size: 0.78rem;
@@ -144,9 +139,7 @@
     }
     .nav-links a:hover, .nav-links a.active { color: var(--accent); }
     .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
-
     .nav-right { display: flex; align-items: center; gap: 0.9rem; }
-
     .theme-btn {
       display: flex; align-items: center; gap: 0.5rem;
       padding: 0.4rem 0.95rem;
@@ -162,13 +155,11 @@
       font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
       color: var(--accent); transition: color 0.3s;
     }
-
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--txt); border-radius: 2px; transition: all 0.3s; }
     .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
     .mobile-nav {
       display: none; position: fixed; top: 68px; left: 0; right: 0;
       background: var(--bg-nav); backdrop-filter: blur(22px);
@@ -183,7 +174,6 @@
       color: var(--txt-muted); padding: 0.35rem 0;
       border-bottom: 1px solid var(--border-soft);
     }
-
     .section-wrap { max-width: 1180px; margin: 0 auto; padding: 110px 6% 80px; }
 
     .section-label {
@@ -202,7 +192,6 @@
       margin-bottom: 3.2rem;
       box-shadow: 0 0 10px var(--accent-glow);
     }
-
     #hero {
       min-height: 100vh; display: grid;
       grid-template-columns: 1fr 1fr;
@@ -210,13 +199,11 @@
       max-width: 1180px; margin: 0 auto;
       padding: 130px 6% 80px;
     }
-
     .hero-text { animation: heroUp 1s 0.25s cubic-bezier(0.4,0,0.2,1) both; }
     @keyframes heroUp {
       from { opacity: 0; transform: translateY(40px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
     .hero-greeting {
       font-family: 'Outfit', sans-serif; font-size: 0.8rem;
       font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
@@ -229,7 +216,6 @@
       animation: heroUp 0.9s 0.45s both; transition: color var(--transition);
     }
     .hero-name .first { color: var(--accent); display: block; }
-
     .hero-role {
       font-family: 'Outfit', sans-serif; font-size: 1rem;
       color: var(--txt-muted); margin-bottom: 0.4rem; min-height: 1.6rem;
@@ -241,7 +227,6 @@
       vertical-align: text-bottom; animation: blink 1s step-end infinite;
     }
     @keyframes blink { 0%,100%{ opacity:1; } 50%{ opacity:0; } }
-
     .hero-age {
       font-family: 'Outfit', sans-serif;
       display: inline-flex; align-items: center; gap: 0.5rem;
@@ -257,7 +242,6 @@
       animation: heroUp 0.9s 0.7s both;
     }
     .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; animation: heroUp 0.9s 0.8s both; }
-
     .btn-primary {
       font-family: 'Outfit', sans-serif; font-size: 0.78rem;
       font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
@@ -266,7 +250,6 @@
       transition: all 0.3s; position: relative; overflow: hidden;
     }
     .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 30px var(--accent-glow); }
-
     .btn-outline {
       font-family: 'Outfit', sans-serif; font-size: 0.78rem;
       font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
@@ -275,7 +258,6 @@
       transition: all 0.3s;
     }
     .btn-outline:hover { border-color: var(--accent); background: var(--accent-soft); transform: translateY(-3px); }
-
     .hero-image-wrap {
       display: flex; justify-content: center; align-items: center;
       animation: heroImgIn 1.2s 0.4s cubic-bezier(0.4,0,0.2,1) both;
@@ -284,7 +266,6 @@
       from { opacity:0; transform: scale(0.9) translateY(24px); }
       to   { opacity:1; transform: scale(1) translateY(0); }
     }
-
     .hero-img-frame { position: relative; width: 340px; height: 420px; }
     .hero-img-frame::before {
       content:''; position:absolute; top:18px; right:-18px;
@@ -305,7 +286,6 @@
       border-radius: 0 0 0 8px; z-index:2;
       transition: border-color var(--transition);
     }
-
     .profile-photo {
       position: relative; z-index:1; width:100%; height:100%;
       object-fit: cover; border-radius: var(--radius);
@@ -313,7 +293,6 @@
       transition: opacity 0.38s ease, transform 0.38s ease, box-shadow var(--transition);
     }
     .profile-photo:hover { transform: scale(1.025); box-shadow: 0 22px 64px var(--accent-glow); }
-
     .hero-badge {
       position:absolute; bottom:-24px; left:-24px; z-index:3;
       background: var(--bg-card); border: 1.5px solid var(--border);
@@ -331,7 +310,6 @@
       font-family:'Outfit',sans-serif; font-size:0.6rem; font-weight:700;
       letter-spacing:0.1em; text-transform:uppercase; color:var(--txt-muted); margin-top:2px;
     }
-
     .floating-chip {
       position:absolute; z-index:3; background: var(--accent); color:#fff;
       font-family:'Outfit',sans-serif; font-size:0.62rem; font-weight:700;
