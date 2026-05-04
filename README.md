@@ -21,14 +21,13 @@ Designed with a modern UI/UX approach, smooth animations, and light/dark theme s
 
 ## ✨ Features
 
-🌗 Light / Dark mode toggle
-🎯 Smooth scroll navigation
-💡 Animated UI (scroll reveal, typing effect, counters)
-📱 Fully responsive design
-🖱️ Custom cursor glow effect
-📊 Skill progress animations
-📬 Contact form validation
-🎨 Modern glassmorphism & gradient UI
+## 🧠 Future Improvements
+
+- 🌍 Deploy live version  
+- 📧 Backend integration for contact form  
+- 📊 Add project filtering system  
+- 📝 Blog section  
+- ⚡ Performance optimization
 
 ## 🛠️ Tech Stack
 
