@@ -12,33 +12,32 @@ This is a fully responsive and animated personal portfolio website built using H
 
 ## It highlights:
 
-👨‍💻 My background and education
-🧠 Technical skills
-🚀 Featured projects
-📬 Contact information
-
-Designed with a modern UI/UX approach, smooth animations, and light/dark theme support.
+- 👨‍💻 My background and education
+- 🧠 Technical skills
+- 🚀 Featured projects
+- 📬 Contact information
 
 ## ✨ Features
 
-## 🧠 Future Improvements
-
-- 🌍 Deploy live version  
-- 📧 Backend integration for contact form  
-- 📊 Add project filtering system  
-- 📝 Blog section  
-- ⚡ Performance optimization
+- 🌗 Light / Dark mode toggle
+- 🎯 Smooth scroll navigation
+- 💡 Animated UI (scroll reveal, typing effect, counters)
+- 📱 Fully responsive design
+- 🖱️ Custom cursor glow effect
+- 📊 Skill progress animations
+- 📬 Contact form validation
+- 🎨 Modern glassmorphism & gradient UI
 
 ## 🛠️ Tech Stack
 
-Frontend
-HTML5
-CSS3 (Custom Properties, Animations)
-JavaScript (Vanilla)
-Design
-Google Fonts (Outfit, Playfair Display, DM Sans)
-Responsive Grid Layout
-UI/UX Animations
+- Frontend
+  - HTML5
+  - CSS3 (Custom Properties, Animations)
+  - JavaScript (Vanilla)
+- Design
+  - Google Fonts (Outfit, Playfair Display, DM Sans)
+  - Responsive Grid Layout
+  - UI/UX Animations
 
 ## 📂 Project Structure
 ~~~
@@ -53,12 +52,12 @@ portfolio/
 
 ## 📸 Sections Included
 
-🏠 Hero Section
-👤 About Me
-🎓 Education Timeline
-💻 Skills
-📁 Projects
-📞 Contact
+- 🏠 Hero Section
+- 👤 About Me
+- 🎓 Education Timeline
+- 💻 Skills
+- 📁 Projects
+- 📞 Contact
 
 ## 📦 Setup & Usage
 Clone the repository:
@@ -74,9 +73,9 @@ Open index.html in your browser
 
 ## 📬 Contact Me
 
-🔗 LinkedIn: https://linkedin.com/in/seshan-rodrigo-1279ba2b6
-💻 GitHub: https://github.com/Seshan24
-📸 Instagram: https://www.instagram.com/sesha.n
+- 🔗 LinkedIn: https://linkedin.com/in/seshan-rodrigo-1279ba2b6
+- 💻 GitHub: https://github.com/Seshan24
+- 📸 Instagram: https://www.instagram.com/sesha.n
 _
 
 ## 📄 License
