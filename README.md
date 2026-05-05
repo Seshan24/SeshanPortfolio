@@ -10,13 +10,6 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 This is a fully responsive and animated personal portfolio website built using HTML, CSS, and JavaScript.
 
-## It highlights:
-
-- 👨‍💻 My background and education
-- 🧠 Technical skills
-- 🚀 Featured projects
-- 📬 Contact information
-
 ## ✨ Features
 
 - 🌗 Light / Dark mode toggle
