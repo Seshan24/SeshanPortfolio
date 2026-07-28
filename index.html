@@ -858,11 +858,27 @@ function submitForm() {
   if (!msg.value.trim()) { msg.classList.add('error'); mErr.classList.add('show'); valid=false; }
   if (valid) {
     btn.textContent='Sending…'; btn.style.opacity='0.7'; btn.disabled=true;
-    setTimeout(()=>{
-      name.value=email.value=msg.value='';
-      btn.textContent='Send Message →'; btn.style.opacity='1'; btn.disabled=false;
+
+    fetch('https://formsubmit.co/ajax/seshannimsath2003@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: name.value.trim(),
+        email: email.value.trim(),
+        message: msg.value.trim(),
+        _subject: 'New message from portfolio site — ' + name.value.trim()
+      })
+    })
+    .then(res => res.json())
+    .then(() => {
+      name.value = email.value = msg.value = '';
+      btn.textContent = 'Send Message →'; btn.style.opacity = '1'; btn.disabled = false;
       ok.classList.add('show');
-    },1300);
+    })
+    .catch(() => {
+      btn.textContent = 'Send Message →'; btn.style.opacity = '1'; btn.disabled = false;
+      alert('Something went wrong sending your message. Please try again or email me directly.');
+    });
   }
 }
 </script>
