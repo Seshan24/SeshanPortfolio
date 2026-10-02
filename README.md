@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 ## 🚀 Live Preview
 
-🔗 [https://your-portfolio-link.com](https://seshan24.github.io/SeshanPortfolio/)
+🔗 [Protfolio](https://seshan24.github.io/SeshanPortfolio/)
 
 ## 📌 About the Project
 
@@ -66,9 +66,8 @@ Open index.html in your browser
 
 ## 📬 Contact Me
 
-- 🔗 LinkedIn: https://linkedin.com/in/seshan-rodrigo-1279ba2b6
-- 💻 GitHub: https://github.com/Seshan24
-- 📸 Instagram: https://www.instagram.com/sesha.n
+- - LinkedIn: [seshan-rodrigo](https://www.linkedin.com/in/seshan-rodrigo-1279ba2b6/)
+- GitHub: [Seshan24](https://github.com/Seshan24)
 _
 
 ## 📄 License
